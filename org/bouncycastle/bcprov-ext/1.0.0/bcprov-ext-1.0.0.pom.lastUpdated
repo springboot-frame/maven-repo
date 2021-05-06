@@ -1,0 +1,16 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 12 11:15:20 CST 2020
+http\://repo.spring.io/milestone/.error=Could not transfer artifact org.bouncycastle\:bcprov-ext\:pom\:1.0.0 from/to spring-milestones (http\://repo.spring.io/milestone)\: Access denied to\: http\://repo.spring.io/milestone/org/bouncycastle/bcprov-ext/1.0.0/bcprov-ext-1.0.0.pom
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+@default-mvnrepository-http\://mvnrepository.com/.lastUpdated=1605150919145
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1605150918090
+http\://mvnrepository.com/.error=Could not transfer artifact org.bouncycastle\:bcprov-ext\:pom\:1.0.0 from/to mvnrepository (http\://mvnrepository.com/)\: Access denied to\: http\://mvnrepository.com/org/bouncycastle/bcprov-ext/1.0.0/bcprov-ext-1.0.0.pom
+https\://maven.aliyun.com/repository/spring/.lastUpdated=1604887749725
+https\://maven.aliyun.com/repository/central/.error=
+https\://maven.aliyun.com/repository/central/.lastUpdated=1604887749645
+https\://repo.maven.apache.org/maven2/.lastUpdated=1605150920599
+@default-spring-milestones-http\://repo.spring.io/milestone/.lastUpdated=1605150919701
+https\://maven.aliyun.com/repository/spring/.error=
+https\://repo.maven.apache.org/maven2/.error=
+@default-spring-snapshots-http\://repo.spring.io/snapshot/.lastUpdated=1605150919446
+http\://repo.spring.io/snapshot/.error=Could not transfer artifact org.bouncycastle\:bcprov-ext\:pom\:1.0.0 from/to spring-snapshots (http\://repo.spring.io/snapshot)\: Access denied to\: http\://repo.spring.io/snapshot/org/bouncycastle/bcprov-ext/1.0.0/bcprov-ext-1.0.0.pom
