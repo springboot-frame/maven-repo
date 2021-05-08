@@ -162,14 +162,6 @@
   </dependencies>
   <repositories>
     <repository>
-      <id>maven-repo-master</id>
-      <url>https://raw.github.com/springboot-frame/maven-repo/master/</url>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
-    </repository>
-    <repository>
       <id>central</id>
       <url>https://maven.aliyun.com/repository/central</url>
       <releases>
