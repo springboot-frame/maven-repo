@@ -17,13 +17,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <!-- war包样式时需要添加下面的内容 -->
-      <!-- 			<exclusions> -->
-      <!-- 				<exclusion> -->
-      <!-- 					<groupId>org.springframework.boot</groupId> -->
-      <!-- 					<artifactId>spring-boot-starter-tomcat</artifactId> -->
-      <!-- 				</exclusion> -->
-      <!-- 			</exclusions> -->
     </dependency>
 
     <dependency>
@@ -37,7 +30,6 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
@@ -55,14 +47,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-logging</artifactId>
     </dependency>
-
-
-    <!-- 热布署更新依赖 -->
-    <!-- 		<dependency> -->
-    <!-- 			<groupId>org.springframework.boot</groupId> -->
-    <!-- 			<artifactId>spring-boot-devtools</artifactId> -->
-    <!-- 			<optional>true</optional> -->
-    <!-- 		</dependency> -->
 
     <!-- jpa 框架 -->
     <dependency>
@@ -144,8 +128,6 @@
     </dependency>
 
     <!-- common包需要的东西 -->
-    <!--	一个Java基础工具类，对文件、流、加密解密、转码、正则、线程、XML等JDK方法进行封装，组成各种Util工具类
-          https://www.hutool.cn/docs-->
     <dependency>
       <groupId>cn.hutool</groupId>
       <artifactId>hutool-all</artifactId>
@@ -174,39 +156,19 @@
     <!-- common包需要的东西（完） -->
     <dependency>
       <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-ext</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <!--eureka依赖-->
-    <!--<dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-    </dependency>-->
-
-    <!--<dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
-      <version>1.10</version>
-    </dependency>-->
-
-  </dependencies>
-  <!--管理spring cloud所有组件的版本-->
-  <!--<dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-dependencies</artifactId>
-      <version>Greenwich.RELEASE</version>
-      <type>pom</type>
-      <scope>import</scope>
+      <artifactId>bcprov-ext-jdk15</artifactId>
+      <version>1.46</version>
     </dependency>
   </dependencies>
-</dependencyManagement>-->
   <repositories>
+    <repository>
+      <id>maven-repo-master</id>
+      <url>https://raw.github.com/springboot-frame/maven-repo/master/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
     <repository>
       <id>central</id>
       <url>https://maven.aliyun.com/repository/central</url>
@@ -220,16 +182,6 @@
     <repository>
       <id>spring</id>
       <url>https://maven.aliyun.com/repository/spring</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>thirdparty</id>
-      <url>http://192.168.0.3:5027/nexus/content/repositories/thirdparty</url>
       <releases>
         <enabled>true</enabled>
       </releases>
